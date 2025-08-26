@@ -7,9 +7,8 @@ class Manager extends Employee {
 
 
     public void computeSalary(double basic_pay) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number of overtime hours: ");
-        int overtime = sc.nextInt();
-        salary = basic_pay + (overtime * 300);
+        double hra = 0.2 * basic_pay;
+        double da = 0.1 * basic_pay;
+        salary = basic_pay +hra+da;
     }
 }
